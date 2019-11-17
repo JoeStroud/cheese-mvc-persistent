@@ -46,4 +46,8 @@ public class CategoryController {
         categoryDao.save(category);
         return "redirect:";
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 823740f1614c7c229110c6d1ce4873d84fbec13b

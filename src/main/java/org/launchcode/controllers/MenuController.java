@@ -20,14 +20,22 @@ import javax.validation.Valid;
 @RequestMapping("menu")
 public class MenuController {
 
+<<<<<<< HEAD
     //Declare instances of dao
+=======
+//Declare instances of dao
+>>>>>>> 823740f1614c7c229110c6d1ce4873d84fbec13b
     @Autowired
     private MenuDao menuDao;
 
     @Autowired
     private CheeseDao cheeseDao;
 
+<<<<<<< HEAD
     //write index handler
+=======
+//write index handler
+>>>>>>> 823740f1614c7c229110c6d1ce4873d84fbec13b
     @RequestMapping(value="")
     public String index(Model model) {
 
@@ -37,7 +45,11 @@ public class MenuController {
         return "menu/index";
     }
 
+<<<<<<< HEAD
     //Displays Add Menu
+=======
+//Displays Add Menu
+>>>>>>> 823740f1614c7c229110c6d1ce4873d84fbec13b
     @RequestMapping(value="add", method= RequestMethod.GET)
     public String AddAMenu(Model model) {
 
@@ -72,7 +84,11 @@ public class MenuController {
         return "menu/view";
     }
 
+<<<<<<< HEAD
     //add and render menu items
+=======
+//add and render menu items
+>>>>>>> 823740f1614c7c229110c6d1ce4873d84fbec13b
     @RequestMapping(value="add-item/{id}", method=RequestMethod.GET)
     public String addItem(Model model, @PathVariable int id) {
         Menu menu = menuDao.findOne(id);
@@ -82,7 +98,11 @@ public class MenuController {
         return "menu/add-item";
     }
 
+<<<<<<< HEAD
     //Process the form
+=======
+//Process the form
+>>>>>>> 823740f1614c7c229110c6d1ce4873d84fbec13b
     @RequestMapping(value="add-item/{id}", method=RequestMethod.POST)
     public String addItem(Model model, @Valid AddMenuItemForm form, @PathVariable int id,
                           @RequestParam int cheeseId, Errors errors) {
@@ -100,4 +120,8 @@ public class MenuController {
     }
 
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 823740f1614c7c229110c6d1ce4873d84fbec13b
