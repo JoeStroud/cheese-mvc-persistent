@@ -23,16 +23,9 @@ public class Menu {
     @ManyToMany
     private List<Cheese> cheeses = new ArrayList<>();
 
-<<<<<<< HEAD
-    //add add method
-=======
-//add add method
->>>>>>> 823740f1614c7c229110c6d1ce4873d84fbec13b
     public void addItem(Cheese item){
         cheeses.add(item) ;
     }
-
-// add 2 constructor
 
     public Menu() { }
 
@@ -40,11 +33,6 @@ public class Menu {
         this.name = name;
     }
 
-<<<<<<< HEAD
-    // add getters and setters
-=======
-// add getters and setters
->>>>>>> 823740f1614c7c229110c6d1ce4873d84fbec13b
     public String getName() {
         return name;
     }
@@ -65,8 +53,5 @@ public class Menu {
         this.cheeses = cheeses;
     }
 
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 823740f1614c7c229110c6d1ce4873d84fbec13b
+
